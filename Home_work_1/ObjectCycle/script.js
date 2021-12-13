@@ -1,5 +1,5 @@
-let cicle = {
-    taskOne: () => {
+
+   function taskOne ()  {
         let sum = 0, col = 0;
         for (let i = 0; i <= 99; i++) {
             if ((i % 2) == 0) {
@@ -7,68 +7,71 @@ let cicle = {
                 col++;
             }
         }
-        console.log(sum + ' leng ' + col);
-    },
-    taskTwo: (a) => {
+        return (sum , col);
+    };
+    function taskTwo (a){
         for (let i = 2; i < a; i++) {
             if (a % i == 0) {
-                console.log('Обычное');
+                return 'Обычное';
                 break;
             } else {
-                console.log("Простое");
+                return "Простое";
                 break;
             }
         }
-    },
-    taskThree: (x) => {
-        let left = 1;
-        let right = x - 1;
-        while (left <= right) {
-            let mid = Math.round((right + left) / 2);
-            if (mid * mid > x) {
-                right = mid - 1;
-            } else if (mid * mid < x) {
-                left = mid + 1;
-            } else {
-                return mid;
-            }
+    };
 
+    function taskThree(x)  {
+        let a = x;
+        while (x * x > a) {
+            x = x / 2;
         }
-    },
-    taskThreeTwo: (x) => {
+        while (x * x < a) {
+            x++;
+        }
+        return Math.floor(x);
+
+    };
+
+    function taskThreeTwo (x)  {
         let center;
         for (let i = 1; i <= x; i += 0.1) {
             center = i * i;
             if (Math.round(center) == x) {
-                console.log(Math.round(i));
+                return Math.round(i);
             }
         }
         ;
-    },
-    taskFour: (x) => {
+    };
+
+    function taskFour (x)  {
+        if(x < 1 ){
+            return 0
+        }
         let pr = 1;
         for (let i = 1; i <= x; i++) {
             pr *= i;
         }
-        console.log(pr);
-    },
-    taskFive: (x) => {
+        return pr
+    };
+
+    function taskFive (x)  {
         let sum = 0;
         while (x != 0) {
             sum += x % 10;
             x = Number.parseInt(x / 10);
         }
-        console.log(sum);
+       return sum
 
-    },
-    taskSix: (x) => {
+    };
+    function taskSix (x)  {
         let sum = 0;
         while (x != 0) {
             sum *= 10;
             sum += x % 10;
             x = Number.parseInt(x / 10);
         }
-        console.log(sum);
-    }
+        return sum
+    };
+   module.exports ={taskOne,taskTwo,taskThree,taskThreeTwo,taskFour,taskFive,taskSix};
 
-};

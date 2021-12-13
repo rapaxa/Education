@@ -12,12 +12,16 @@ function getNumAndCalc(a, b) {
    function getCord (x, y)  {
         if ((x > 0) && (y > 0)) {
             console.log("Лежит в I кординате");
+            return 1
         } else if ((x < 0) && (y < 0)) {
             console.log("Лежит в III кординате");
+            return 3
         } else if ((x > 0) && (y < 0)) {
             console.log("Лежит в II кординате");
+            return 2
         } else if ((x < 0) && (y > 0)) {
             console.log("Лежит в IV кординате");
+            return 4
         }
     };
 //Unit Number 3
@@ -41,19 +45,20 @@ function getNumAndCalc(a, b) {
     //Unit Number 5
     function getRate (rate)  {
         if ((rate >= 0) && (rate <= 19)) {
-            console.log("F");
+           return("F");
         } else if ((rate >= 20) && (rate <= 39)) {
-            console.log('E');
+           return('E');
         } else if ((rate >= 40) && (rate <= 59)) {
-            console.log('D');
+           return('D');
         } else if ((rate >= 60) && (rate <= 74)) {
-            console.log('C');
+           return('C');
         } else if ((rate >= 75) && (rate <= 89)) {
-            console.log('B');
+           return('B');
         } else if ((rate >= 90) && (rate <= 100)) {
-            console.log('A');
+           return('A');
         } else {
-            console.log("Неверно указано число");
+           return("Неверно указано число");
 
         }
     }
+module.exports ={getNumAndCalc,getCord,sum,sumMax,getRate};

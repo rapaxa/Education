@@ -1,22 +1,29 @@
-//
 let text = document.getElementById('text')
 let save = document.getElementById('save')
 save.addEventListener('click', saveBtn)
+save.addEventListener('click', getCount)
+let rN,count
 let getBtn = document.getElementById('generate')
 getBtn.addEventListener('click', getGameNumber)
-
+function getCount (){
+    let number = document.getElementById('number').value
+    if(number>1 && number<15){
+        return count = number
+    }else{
+        alert('Введите другое значение')
+    }
+}
 function getGameNumber() {
-    let number = saveBtn()
-    let count = document.getElementById('number').value
+
     let getGNumber = document.getElementById('g').value
     if (count >= 0) {
-        if (number < getGNumber) {
+        if (rN < getGNumber) {
             text.innerHTML = `Перебор, осталосб : ${count} попыток`
 
-        } else if (number > getGNumber) {
+        } else if (rN > getGNumber) {
             text.innerHTML = `Недолет, осталосб : ${count} попыток`
 
-        } else if (number == getGNumber) {
+        } else if (rN == getGNumber) {
             text.innerHTML = "Угадал"
 
         }
@@ -38,7 +45,7 @@ function saveBtn() {
 
     } else {
         save.disabled
-        return number;
+        return rN = number;
     }
 
 }

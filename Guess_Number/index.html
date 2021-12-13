@@ -16,26 +16,27 @@
             <div class="block_input">
                 <div class="text">от</div>
                 <div>
-                    <input  id="number_start" placeholder="1" >
+                    <input type="number"  id="number_start" placeholder="1" >
                 </div>
                 <div class="text">до</div>
                 <div>
-                    <input id="number_finish" placeholder="200">
+                    <input type="number" id="number_finish" placeholder="200">
                 </div>
             </div>
             <p>Выберите количество попыток :</p>
             <div class="block_input">
                 <div>
-                    <input id="number" placeholder="1">
+                    <input type="number" id="number" placeholder="1">
                 </div>
             </div>
             <input id="save" type="button" value="Save"/>
             </div>
         <div class="block_generate">
-            <h1>Привет я загадал число попробуй отгадать</h1>
+            <h1 class="message"></h1>
             <div class="block_input">
                 <div>
-                    <input id="g" class="number" placeholder="1">  <input id="generate" type="button" value="Generate"/>
+                    <input id="g" type="number" class="number" placeholder="1">
+                    <input id="generate" type="button" value="Generate"/>
                 </div>
                 <div id="text"></div>
             </div>

@@ -1,0 +1,61 @@
+$shadow = -5px -5px 5px -5px rgba(132, 77, 210, 0.6);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  max-width: 1920px;
+  height: 100vh;
+  background: grey;
+}
+.container {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: whitesmoke;
+  width: 650px;
+  height: 51vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  input:focus {
+    outline-color: blue;
+  }
+  .diapason {
+
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.diapason__items{
+  input:nth-of-type(2n) {
+    border: 2px solid rgba(255, 150, 154, 2);
+  }
+  .diapason__item{
+    &--text{
+
+    }
+    &--input{
+
+    }
+  }
+}
+.generate__items{
+  input:nth-child(1) {
+    border: 2px solid orange;
+  }
+}
+.diapason__list--button{
+  width: 50px;
+  border-radius: 10% ;
+}
+.diapason__list--button:hover{
+  box-shadow: $shadow;
+}

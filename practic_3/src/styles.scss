@@ -65,12 +65,17 @@ body{
     justify-content: space-around;
     align-items: center;
 
-       :nth-child(1) {
+    :nth-child(7){
+      &:hover{
         background-color: pink;
       }
-    :nth-child(7){
-      background-color: pink;
     }
+    :nth-child(1){
+      &:hover{
+        background-color: pink;
+      }
+    }
+
     &__btn{
       width: 14.2857142857%;
       display: flex;
@@ -80,7 +85,11 @@ body{
       color: white;
       justify-content: center;
       align-items: center;
-
+      &:not(:first-child):not(:last-child) {
+        &:hover {
+          background-color: burlywood;
+        }
+      }
     input{
 
       &:disabled + label{
@@ -93,7 +102,6 @@ body{
         height: 100%;
       }
       &:checked  + label {
-
       background-color: orange;
       display: flex;
       justify-content: center;

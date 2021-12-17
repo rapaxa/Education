@@ -14,9 +14,9 @@
             <h1 class="diapason__title">Выберите диапазон чисел от 1 до 200 и количество попыток от 1 до 15:</h1>
             <div class="diapason__items">
                 <label class="diapason__item--text">от</label>
-                <input class="diapason__item--input" type="number"  id="number_start" placeholder="1" >
+                <input class="diapason__item--input" type="number"  id="number_start" pattern="[0-9]{,3}" placeholder="1" >
                 <label class="diapason__item--text">до</label>
-                <input  class="diapason__item--input" type="number" id="number_finish" placeholder="200">
+                <input  class="diapason__item--input" type="number" id="number_finish" pattern="[0-9]{,3}" placeholder="200">
 
             </div>
             <div class="diapason__list">

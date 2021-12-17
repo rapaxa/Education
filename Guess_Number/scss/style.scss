@@ -7,13 +7,14 @@ $shadow = -5px -5px 5px -5px rgba(132, 77, 210, 0.6);
 }
 body{
   max-width: 1920px;
-  height: 100vh;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: grey;
 }
 .container {
   display: flex;
-  margin: 0 auto;
-  margin-top: 50px;
   background: whitesmoke;
   width: 650px;
   height: 51vh;

@@ -4,7 +4,6 @@ const genBtn = document.querySelector('.randomizer__generate')
 const outputText = document.querySelector('.randomizer__output')
 const reset = document.querySelector('.randomizer__reset')
 
-
 let saveNumber = [];
 let min, max;
 let count = 0;
@@ -59,6 +58,4 @@ reset.addEventListener('click', () => {
     count = 0
     j = 0
     outputText.textContent = "Ваше число будет здесь"
-
-
 })

@@ -1,15 +1,19 @@
 {
-  "name": "objectarr",
+  "name": "calcoddnum",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "description": "Jest intro",
+  "main": "index.js",
+  "author": "Volodchenko",
+  "license": "MIT",
   "scripts": {
-    "test": "mocha"
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "js",
+    "javascript",
+    "jest"
+  ],
   "devDependencies": {
-    "mocha": "^9.1.3"
+    "jest": "^27.4.5"
   }
 }

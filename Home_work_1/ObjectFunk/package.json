@@ -1,0 +1,19 @@
+{
+  "name": "objectFunk",
+  "version": "1.0.0",
+  "description": "Jest intro",
+  "main": "index.js",
+  "author": "Volodchenko",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "jest"
+  ],
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}

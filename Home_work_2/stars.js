@@ -7,7 +7,6 @@ function one() {
         str += '\n';
     }
     return str;
-
 }
 
 //console.log(one())

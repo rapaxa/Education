@@ -1,0 +1,17 @@
+{
+  "name": "objectinjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "countCharacters.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.4.6"
+  }
+}
